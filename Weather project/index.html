@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Weather</div>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search a city...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="errorMsg" class="error-text"></div>
+        <div id="weatherContainer" class="weather-grid"></div>
+    </div>
+
+    <script src="./jss/script.js"></script>
+</body>
+</html>

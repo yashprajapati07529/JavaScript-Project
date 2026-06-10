@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlimTV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white py-2 position-absolute top-0 start-0 w-100 z-3 bg-dark bg-opacity-25">
+        <div class="container d-flex justify-content-between align-items-center  ">
+            <div class="logo col-2">
+                <h1>FlimTV</h1>
+            </div>
+            <nav class="nav col-6 justify-content-end">
+                <ul class="d-flex  gap-4 me-5 list-unstyled mb-0">
+                    <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Movies</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">TV Shows</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Anime</a></li>
+                </ul>
+            </nav>
+            <div class="search col-4">
+                <input type="text" placeholder="Search for movies and TV shows..." class="form-control border-0 ">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="slideimage">
+                <div class="slides" id="slides">
+                    <div class="slide">
+                        <img src="https://images7.alphacoders.com/111/1111278.jpg" alt="image-slides">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://static.digit.in/Netflix-Bloodhound-season-2.png" alt="image-slides">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.milesweb.in/blog/wp-content/uploads/2021/09/10-insightful-Business-Growth-Learnings-From-Money-Heist.jpg"
+                            alt="image-slides">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://slidechef.net/wp-content/uploads/2025/06/wednesday-movie-wallpaper.jpg"
+                            alt="image-slides">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://wallpapercat.com/w/full/0/c/f/46439-1920x1080-desktop-1080p-squid-game-background.jpg"
+                            alt="image-slides">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)"><i class=" fa-solid fa-chevron-left"></i></button>
+                <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+
+            </div>
+        </section>
+        <section>
+            <div class="mt-4 ms-4">
+                <h1>Movies..</h1>
+            </div>
+
+            <div class="slideimage">
+                <div class="slides" id="slides1">
+                    <div class="slide1">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/e091d06123fc5c4eea1b18c9ddf366f4.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/05/22/df954872d885cb662863000e24fc3c5f.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/04/01/a2f78edd08aabb9a90a1db258eba8139.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/05/22/18ad12fcd3ac4fed989de71d11d075dd.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/05/30/4945aad510788aecd741b1cf1e078b06.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/f040e33a96e007cd80276ce8c474769a.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/01/9b306c92a4b2dd6f9bfe7e649bc45b70.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/84f6788013af15b286bcf0c861e41d48.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/daebc9055f51c1d7bdb9163c11051f8e.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/05/13/de0cc9759846b33617b9474ec1fb2551.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/05/aa59b083b468ad00972855cb741b92c5.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/01/27/8a4e2dd1db60d7d2a3e9754d8f91db10.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/5ca80ab82eefcf2374fe9c759b5e733b.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/03/23d370f8019b50ea18ff72ee593e738c.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                                <li class="box">
+                                    <img src="https://pacdn.aoneroom.com/image/2026/06/01/18b51ebf38f6530f00a5a236a09091a0.jpg?x-oss-process=image/resize%2Cw_300"
+                                        alt="image ">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev1" onclick="moveSlide1(-1)"><i class=" fa-solid fa-chevron-left"></i></button>
+                <button class="next1" onclick="moveSlide1(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section>
+            <div class="mt-4 ms-4">
+                <h1>TV Shows..</h1>
+            </div>
+
+            <div class="slideimage">
+                <div class="slides" id="slides2">
+                    <div class="slide2">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide2">
+                        <div class="movie-box">
+                            <ul>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="prev2" onclick="moveSlide2(-1)"><i class=" fa-solid fa-chevron-left"></i></button>
+                <button class="next2" onclick="moveSlide2(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src=" ./jss/script.js">
+    </script>
+</body>
+
+</html>
