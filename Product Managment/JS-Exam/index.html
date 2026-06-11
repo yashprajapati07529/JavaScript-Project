@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Product Management</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class=" p-2 me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-4">
+            <h2 id="form-title" class="text-center p-3">Add New Product</h2>
+
+            <form id="product-form" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Product Title *</label>
+                    <input type="text" id="title" class="form-control" placeholder="e.g., Wireless Mouse" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price ($) *</label>
+                    <input type="number" id="price" step="0.01" class="form-control" placeholder="e.g., 29.99" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image URL</label>
+                    <input type="url" id="image" class="form-control" placeholder="https://example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select id="category" class="form-select">
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Home & Kitchen">Home & Kitchen</option>
+                        <option value="Books">Books</option>
+                        <option value="Shoes">Shoes</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" id="submit-btn" class="btn btn-primary w-100">Add Product</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container main-content mt-5">
+            <div class="controls row d-flex justify-content-between g-3 mb-4">
+                <div class="col-md-3">
+                    <label for="search" class="form-label">Search by Title</label>
+                    <input type="text" id="search" class="form-control" placeholder="Type to search...">
+                </div>
+                <div class="col-md-3">
+                    <label for="filter-category" class="form-label">Filter Category</label>
+                    <select id="filter-category" class="form-select">
+                        <option value="all">All Categories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Home & Kitchen">Home & Kitchen</option>
+                        <option value="Books">Books</option>
+                        <option value="Shoes">Shoes</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="sort-price" class="form-label">Sort by Price</label>
+                    <select id="sort-price" class="form-select">
+                        <option value="none">Default</option>
+                        <option value="low-high">Low to High</option>
+                        <option value="high-low">High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-3" id="product-container"></div>
+        </div>
+    </main>
+
+    <script src="./jss/script.js"></script>
+</body>
+
+</html>
