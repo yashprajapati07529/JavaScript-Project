@@ -89,7 +89,6 @@ const timerContainer = document.getElementById('timer-container');
 const resultElement = document.getElementById('result');
 const nextButton = document.querySelector('.next-btn');
 
-// HTML टैग्स को सुरक्षित रूप से टेक्स्ट में बदलने का फंक्शन (ताकि ब्राउज़र भ्रमित न हो)
 function escapeHTML(text) {
     return text.replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
@@ -102,11 +101,11 @@ function loadQuestion() {
     startTimer();
     const currentQuiz = quizData[currentQuestionIndex];
 
-    // सुरक्षित रूप से सवाल दिखाएं
+
     questionElement.innerHTML = escapeHTML(currentQuiz.question);
     optionsContainer.innerHTML = '';
 
-    // सुरक्षित रूप से ऑप्शंस दिखाएं
+
     currentQuiz.options.forEach((option) => {
         const safeOption = escapeHTML(option);
         const label = document.createElement('label');
