@@ -95,16 +95,10 @@ function moveSlide2(n) {
 }
 
 
-// let autoslide = setInterval(() => {
-//     moveSlide(1);
-// }, 3000);
+let autoslide = setInterval(() => {
+    moveSlide(1);
+}, 4000);
 
 showSlide();
 showSlide1();
 showSlide2();
-
-
-
-
-
-
